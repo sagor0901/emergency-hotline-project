@@ -368,13 +368,27 @@ document.getElementById("clear-btn").addEventListener("click", function () {
 document;
 const likeBtns = document.getElementsByClassName("like-btn");
 for (const likeBtn of likeBtns) {
-  console.log(likeBtn);
   likeBtn.addEventListener("click", function () {
     const likeCount = togetTextToNumber("like-count");
     const newLikeCount = likeCount + 1;
     document.getElementById("like-count").innerText = newLikeCount;
   });
 }
-// .addEventListener("click", function () {
+//  copy count
 
-// });
+document;
+const copyBtns = document.getElementsByClassName("copy-btn");
+
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", function () {
+    const title = copyBtn.parentElement.parentElement;
+    const childInnerText = title.children[3].innerText;
+
+    alert("The number has been copied" + " " + childInnerText);
+    navigator.clipboard.writeText(childInnerText);
+
+    const copyCount = togetTextToNumber("copy-count");
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-count").innerText = newCopyCount;
+  });
+}
