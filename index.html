@@ -37,24 +37,22 @@
             </h1>
           </div>
           <div class="flex w-full flex-wrap gap-3 justify-end">
-            <button
+            <p
               class="px-9 flex items-center gap-3 font-bold py-3 rounded-full bg-[#e3fde6]"
             >
-              <span>0</span>
+              <span id="like-count">0</span>
               <img class="w-[25px]" src="./assets/heart.png" alt="" />
-            </button>
-            <button
+            </p>
+            <p
               class="px-5 flex items-center gap-3 font-bold py-3 rounded-full bg-[#e3fde6]"
             >
               <span id="coin">100</span>
               <img class="w-[25px]" src="./assets/coin.png" alt="" />
-            </button>
+            </p>
 
-            <button
-              class="px-9 font-bold py-3 text-white rounded-full bg-[#00A63E]"
-            >
+            <p class="px-9 font-bold py-3 text-white rounded-full bg-[#00A63E]">
               <span>0 </span>Copy
-            </button>
+            </p>
           </div>
         </div>
       </nav>
@@ -91,7 +89,7 @@
                   <div class="bg-red-100 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -110,7 +108,7 @@
                     Copy
                   </button>
                   <button
-                    id="national-emargency-call"
+                    id="national-emergency-call"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -127,7 +125,7 @@
                   <div class="bg-blue-200 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/police.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -167,7 +165,7 @@
                       alt=""
                     />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -184,6 +182,7 @@
                     Copy
                   </button>
                   <button
+                    id="fire-service-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -200,7 +199,7 @@
                   <div class="bg-red-200 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/ambulance.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -217,6 +216,7 @@
                     Copy
                   </button>
                   <button
+                    id="ambulance-service-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -233,7 +233,7 @@
                   <div class="bg-red-100 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/heart.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -252,6 +252,7 @@
                     Copy
                   </button>
                   <button
+                    id="women-child-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -268,7 +269,7 @@
                   <div class="bg-gray-200 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/logo-dark.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -287,6 +288,7 @@
                     Copy
                   </button>
                   <button
+                    id="anti-corruption-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -303,7 +305,7 @@
                   <div class="bg-red-200 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -320,6 +322,7 @@
                     Copy
                   </button>
                   <button
+                    id="electricity-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -336,7 +339,7 @@
                   <div class="bg-pink-200 p-3 rounded-lg">
                     <img class="w-[30px]" src="./assets/brac.png" alt="" />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -353,6 +356,7 @@
                     Copy
                   </button>
                   <button
+                    id="brac-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -373,7 +377,7 @@
                       alt=""
                     />
                   </div>
-                  <button>
+                  <button class="btn like-btn bg-white">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -392,6 +396,7 @@
                     Copy
                   </button>
                   <button
+                    id="railway-btn"
                     class="w-1/2 px-5 py-2 rounded-xl border bg-[#00A63E] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
@@ -411,6 +416,7 @@
                 <i class="fa-regular fa-clock"></i> History
               </p>
               <button
+                id="clear-btn"
                 class="px-9 font-bold py-3 text-white rounded-full bg-[#00A63E]"
               >
                 Clear
